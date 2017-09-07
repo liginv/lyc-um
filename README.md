@@ -1,6 +1,6 @@
 # My python practice file
 
-## Preriqusies:
+## Prerequisite:
 * Python 3.x 
 ## How to use:
 * Clone the file & cd into the file's directory 
