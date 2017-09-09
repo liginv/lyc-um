@@ -86,3 +86,14 @@ def freq(s):
     # for key, value in letters.items():
     #     print (f"'{key}' => {value}    ", end='')
     # print ("\n")
+
+
+def primes(n):
+    primes = list(range(2, n + 1))    
+    for i in primes:
+        p = i
+        for i in primes:
+            primes = [x for x in primes if x != p * i]
+    return primes
+
+
