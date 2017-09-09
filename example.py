@@ -73,3 +73,16 @@ def table_grid(n):
             result = i * j
             print(f"\t{result}", end='')
     print("\n")
+
+
+def freq(s):
+    letters = {}
+    for i in s:
+        if i not in letters:
+            letters[i] = 1
+        else:
+            letters[i] += 1
+    print(letters.items())
+    # for key, value in letters.items():
+    #     print (f"'{key}' => {value}    ", end='')
+    # print ("\n")
