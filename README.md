@@ -12,7 +12,7 @@
 * Use the functions in the example.py file
 <pre>>>> example.function_name(args)</pre>
 
-## Functions available:
+## Functions List:
 #### function_name (argument_datatype)
 * tabels(integer, integer)
 * biggest(integer, integer)
@@ -22,3 +22,4 @@
 * fizzbizz(integer)
 * panagram(string)
 * table_grid(integer)
+* freq(string)
