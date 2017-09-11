@@ -67,7 +67,7 @@ def table_grid(n):
         print(f"\t{i}", end='')
 
     for i in range(1, n + 1):
-        print("\n")
+        print("\n")  # print by default add a new line so print("\n") give two new line.
         print(f"\n{i}", end='')
         for j in range(1, n + 1):
             result = i * j
@@ -82,18 +82,27 @@ def freq(s):
             letters[i] = 1
         else:
             letters[i] += 1
-    print(letters.items())
-    # for key, value in letters.items():
-    #     print (f"'{key}' => {value}    ", end='')
-    # print ("\n")
+    return letters
 
+
+# def primes(n):
+#     primes = list(range(2, n + 1))    
+#     for i in primes:
+#         p = i
+#         for i in primes:
+#             primes = [x for x in primes if x != p * i]
+#     return primes
 
 def primes(n):
-    primes = list(range(2, n + 1))    
+    primes = set(range(2, n + 1))
+    cancelled = set()
     for i in primes:
-        p = i
-        for i in primes:
-            primes = [x for x in primes if x != p * i]
-    return primes
+        if i not in cancelled:
+            for j in range(i * i, n + 1, i):
+                cancelled.add(j)
+    # return primes.difference(cancelled)
+    return (primes - cancelled)
+
+
 
 
