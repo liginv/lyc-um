@@ -101,8 +101,4 @@ def primes(n):
             for j in range(i * i, n + 1, i):
                 cancelled.add(j)
     # return primes.difference(cancelled)
-    return (primes - cancelled)
-
-
-
-
+    return sorted((primes - cancelled))
