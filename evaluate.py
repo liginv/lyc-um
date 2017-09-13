@@ -13,8 +13,8 @@ def evaluate(expression):
             operator = i
             operand_Two = int(stack.pop())
 
-            operators = {'+': operand_One + operand_Two,
-                         '-': operand_One - operand_Two,
+            operators = {'+': operand_Two + operand_One,
+                         '-': operand_Two - operand_One,
                          '*': operand_One * operand_Two,
                          '/': operand_One / operand_Two
                          }
@@ -22,7 +22,7 @@ def evaluate(expression):
             if operators[operator]:
                 stack.append(operators[operator])
             else:
-                print(f"Wrong expression{operator}!")
+                print(f"Wrong expression '{operator}'!")
 
     print(f"{stack}")
 
