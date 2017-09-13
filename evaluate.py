@@ -25,7 +25,7 @@ def evaluate(expression):
             if operators[i]:
                 stack.append(operators[i])
             else:
-                print("Wrong expression!")
+                print(f"Wrong expression{i}!")
 
     print(f"{stack}")
 
