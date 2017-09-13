@@ -19,10 +19,10 @@ def evaluate(expression):
                          '/': operand_One / operand_Two
                          }
 
-            if operators[i]:
-                stack.append(operators[i])
+            if operators[operator]:
+                stack.append(operators[operator])
             else:
-                print(f"Wrong expression{i}!")
+                print(f"Wrong expression{operator}!")
 
     print(f"{stack}")
 
