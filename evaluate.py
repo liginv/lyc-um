@@ -2,13 +2,10 @@ from sys import argv
 
 postfix = argv[1]
 
-print(f"The espression is : {postfix} {type(postfix)}")
-
 
 def evaluate(expression):
     stack = []
     for i in expression:
-        # print(i)
         if i.isdigit():
             stack.append(i)
         else:
