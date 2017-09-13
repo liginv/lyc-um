@@ -1,6 +1,6 @@
 # My python practice file
 
-## Functions List:
+## Functions List in example.py:
 #### function_name (argument_datatype)
 * tables(integer, integer)
 * biggest(integer, integer)
@@ -12,3 +12,7 @@
 * table_grid(integer)
 * freq(string)
 * primes(integer)
+
+## Other Functions:
+* ari(file)
+* evaluate(string)
