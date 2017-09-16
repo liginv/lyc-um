@@ -2,8 +2,7 @@ def tables(m, n):
     for i in range(1, n + 1):
         result = m * i
         # print("{} X {} = {}".format(m,i,result)) # old way of doing - python 2.7 to 3.4
-        # print(f"{m} X {i} = {result}")  # works in 3.6 onwards
-        return result
+        print(f"{m} X {i} = {result}")  # works in 3.6 onwards
 
 
 def biggest(a, b):
@@ -98,7 +97,7 @@ def primes(n):
     cancelled = set()
     for i in primes:
         if i not in cancelled:
-            for j in range(i * i, n + 1, i):
+            for j in range(i + i, n + 1, i):
                 cancelled.add(j)
     # return primes.difference(cancelled)
     return sorted((primes - cancelled))
