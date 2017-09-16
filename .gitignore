@@ -1,2 +1,4 @@
 __pycache__
 *.txt
+.DS_store
+.cache
